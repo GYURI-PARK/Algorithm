@@ -100,6 +100,6 @@
 
 
 
-### 10. [백트레킹]
+### 10. [백트레킹(Backtracking)](https://gyurisinzorba.tistory.com/m/108)
 
 > 📌 백준 알고리즘 14888번 : 연산자 끼워넣기
