@@ -78,6 +78,8 @@
 
 > 📌 백준 알고리즘 11866번 : 요세푸스 문제 0
 
+> ⭐️ BOJ_2493 : 탑
+
 
 
 ### 8. [우선순위 큐(Priority Queue), 힙(Heap)](https://gyurisinzorba.tistory.com/101?category=1032438)
