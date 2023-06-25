@@ -22,8 +22,10 @@ tmp = [] # 가방안에 들어갈 수 있는 모든 보석들
 
 for i in bag:
     while rubik and rubik[0][0] <= i:
-        heapq.heappush(tmp, -rubik[0][1])
-        heapq.heappop(rubik)
+        heapq.heappush(tmp, -rubik[0][1]) # 가장 작은 값 pop 따라서 (-가격) push 
+        heapq.heappop(rubik) 
+        print('rubik', rubik)
+        print('tmp', tmp)
 
     if tmp:
         res -= heapq.heappop(tmp)
