@@ -16,7 +16,7 @@ def bfs(start, goal):
             return visited[x]
 
         for i in (x + u, x - d):
-            if 0 < i <= f and visited[i] == -1:
+            if 0 < i <= f and visited[i] == -1: # 층 수가 1부터 시작하므로 0이상의 조건을 붙일 필요가 없다.
                 q.append(i)
                 visited[i] = visited[x] + 1
 
