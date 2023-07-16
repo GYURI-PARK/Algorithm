@@ -6,9 +6,6 @@ m = int(sys.stdin.readline())
 
 # 입력값을 담을 리스트
 graph = [[] for _ in range(n+1)]
-# 방문 처리 기록
-# visited = [False] * (n + 1)
-
 
 for i in range(m):
     a,b,c = map(int, sys.stdin.readline().split())
