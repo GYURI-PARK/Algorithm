@@ -21,7 +21,6 @@ def dijkstra(graph, start):
     pq = []
     distance[start] = 0
     heapq.heappush(pq, [distance[start], start])
-    
 
     while pq:
         dist, node = heapq.heappop(pq)
@@ -38,9 +37,7 @@ def dijkstra(graph, start):
             if nd < distance[next_node]:
                 distance[next_node] = nd
                 heapq.heappush(pq,[nd, next_node])
-
     return distance
 
 res = dijkstra(graph, start)
-
 print(res[end])
