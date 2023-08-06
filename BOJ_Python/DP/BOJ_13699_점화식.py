@@ -17,14 +17,13 @@
 
 # ==================
 
-dp = [0] * 36
-dp[0] = 1
-
 n = int(input())
-res = 0
+dp = [1, 1, 2]
 
-for i in range(1, n+1):
-    dp[i] = dp[i-1] * dp[i-1]
-    res += dp[i]
+for i in range(3, n+1):
+    tmp = 0
+    for j in range(i):
+        tmp += dp[j] * dp[i-j-1]
+    dp.append(tmp)
 
-print(res)
+print(dp[n])
