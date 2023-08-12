@@ -11,4 +11,4 @@ for i in range(1, n):
             dp[i] = max(dp[i], dp[j] + 1)
 
 print(max(dp))
-
+# dp = i번째 수까지의 가장 큰 부분수열
