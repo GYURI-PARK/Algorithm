@@ -14,5 +14,6 @@ for p, n in coin:
             ans = i - (p*j)
             if ans >= 0:
                 dp[i] += dp[ans]
+        print(dp)
 
 print(dp[t])

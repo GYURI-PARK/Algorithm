@@ -16,5 +16,4 @@ for i in range(1, len(s1) + 1):
             else:
                 dp[i][j] = dp[i][j-1]
 
-print(dp)
 print(dp[len(s1)][len(s2)])
