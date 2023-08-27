@@ -15,7 +15,6 @@ while start <= end:
     for i in range(n):
         total += mid // t[i]
        
-    print('total,', total)
     if total >= m:
         end = mid - 1
         res = min(res, mid)

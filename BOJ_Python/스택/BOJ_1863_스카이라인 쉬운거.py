@@ -13,7 +13,7 @@ res = 0
 #     if y not in stack and y != 0:
 #         stack.append(y)
 #         res += 1
-#     elif y < stack[-1]:
+#     elif y < stack[-1] and y in stack:
 #         stack.pop()
 
 # print(res)
@@ -23,10 +23,12 @@ for i in range(n):
 
     while len(stack) > 0 and stack[-1] > y:
         res += 1
+        print('res', res)
         stack.pop()
     if len(stack) > 0 and stack[-1] == y:
         continue
     stack.append(y)
+    print('stack', stack)
 
 while len(stack) > 0:
     if stack[-1] > 0:
@@ -34,3 +36,7 @@ while len(stack) > 0:
     stack.pop()
 
 print(res)
+
+# y가 변하는 지점들을 확인하면서 stack에 넣거나 뺀다.
+# y가 같다면 stack에 넣지 않고, stack의 top보다 작으면 건물의 개수(answer)를 1씩 증가시킨다.
+# 마지막으로 stack에 남아 있는 값들을 꺼내면서 0보다 크면 건물의 개수를 1씩 증가시킨다.
