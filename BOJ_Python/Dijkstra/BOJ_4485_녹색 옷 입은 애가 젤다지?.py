@@ -1,7 +1,7 @@
 import heapq
 
-dx = [-1, 1, 0, 0]
-dy = [0, 0, -1, 1]
+dx = [0, 0, -1, 1]
+dy = [-1, 1, 0, 0]
 cnt = 1
 
 def dijkstra():
@@ -11,6 +11,7 @@ def dijkstra():
 
     while pq:
         cost, x, y = heapq.heappop(pq)
+        # 마지막 좌표
         if x == n-1 and y == n-1:
             print(f'Problem {cnt}: {distance[x][y]}')
             break
