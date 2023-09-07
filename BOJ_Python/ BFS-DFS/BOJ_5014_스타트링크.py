@@ -53,31 +53,3 @@ def bfs(start, goal):
     return "use the stairs"
 
 print(bfs(s, g))
-
-# ---------------------------------------------------------------------------------------------------
-
-from collections import deque
-
-f, s, g, u, d = map(int, input().split())
-
-def bfs(start, goal):
-    q = deque()
-    visited = [0] * (f + 1)
-
-    q.append(start)
-    visited[start] = 1
-
-    while q:
-        x = q.popleft()
-
-        if x == goal:
-            return visited[x] - 1
-
-        for i in (x - d, x + u):
-            if 1 <= i <= f and visited[i] == 0:
-                q.append(i)
-                visited[i] = visited[x] + 1
-
-    return "use the stairs"
-
-print(bfs(s, g))
