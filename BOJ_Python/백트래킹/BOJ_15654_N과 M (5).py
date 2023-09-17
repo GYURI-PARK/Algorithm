@@ -25,6 +25,7 @@ box = []
 
 li.sort()
 
+
 def backtracking(depth):
     if depth == m:
         print(' '.join(map(str, box)))
