@@ -6,7 +6,7 @@ for i in 0...9{
     dp[0][i] = 1
 }
 
-for row in stride(from: 1, to: count, by: 1) {
+for row in stride(from: 1, to: num, by: 1) {
     dp[row][0] = dp[row - 1][1]
     
     for index in 1...8 {
