@@ -14,7 +14,7 @@ for i in range(1, n+1):
         else:
             dp[i][j] = max(dp[i-1][j], dp[i-1][j-l] + h)
     
-print(dp[n][99])
+print(dp)
 
 
 # 배낭정리의 기본 개념은,
