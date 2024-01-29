@@ -10,4 +10,4 @@ for i in coin:
         if j-i >= 0:
             dp[j] += dp[j-i]
 
-print(dp[k])
+print(dp)
