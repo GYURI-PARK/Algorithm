@@ -18,5 +18,5 @@ for i in range(1, n+1):
         else:
             backpack[i][j] = max(value + backpack[i-1][j-weight], backpack[i-1][j])
 
-print(backpack[n][k])
+print(backpack)
 
